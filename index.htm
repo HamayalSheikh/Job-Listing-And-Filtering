@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Job Listings</title>
+    <style>
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <div class="nav-bar">
+        <img src="./images/bg-header-desktop.svg" alt="background">
+    </div>
+
+    <div class="popup-container" id="popup-container">
+    </div>
+
+    <div class="container" id="job-container">
+        <div class="content-left">
+            <img src="./images/photosnap.svg" alt="photosnap">
+            <a href="#" id="photosnap-link">
+                <h3>Photosnap</h3>
+            </a>
+            <div class="box" style="background-color: hsl(180, 29%, 50%);">NEW!</div>
+            <div class="box" style="background-color: hsl(180, 14%, 20%);">FEATURED</div>
+            <h4>Senior Frontend Developer</h4>
+            <span class="job-info">1d ago</span>
+            <span class="bullet">&bull;</span>
+            <span class="job-info">Full Time</span>
+            <span class="bullet">&bull;</span>
+            <span class="job-info">USA only</span>
+        </div>
+        <div class="delete-cross">✖</div>
+        <div class="job-filters">
+            <div class="clickable-box" data-attribute="role">Frontend</div>
+            <div class="clickable-box" data-attribute="level">Senior</div>
+            <div class="clickable-box" data-attribute="languages">HTML</div>
+            <div class="clickable-box" data-attribute="languages">CSS</div>
+            <div class="clickable-box" data-attribute="languages">JavaScript</div>
+        </div>
+    </div>
+
+    <div class="container" id="job-container">
+        <div class="content-left">
+            <img src="./images/manage.svg" alt="photosnap">
+            <a href="#" id="photosnap-link">
+                <h3>Manage</h3>
+            </a>
+            <div class="box" style="background-color: hsl(180, 29%, 50%);">NEW!</div>
+            <div class="box" style="background-color: hsl(180, 14%, 20%);">FEATURED</div>
+            <h4>Fullstack Developer</h4>
+            <span class="job-info">1d ago</span>
+            <span class="bullet">&bull;</span>
+            <span class="job-info">Part Time</span>
+            <span class="bullet">&bull;</span>
+            <span class="job-info">Remote</span>
+        </div>
+        <div class="delete-cross">✖</div>
+        <div class="job-filters">
+            <div class="clickable-box" data-attribute="role">Fullstack</div>
+            <div class="clickable-box" data-attribute="level">Midweight</div>
+            <div class="clickable-box" data-attribute="languages">Python</div>
+            <div class="clickable-box" data-attribute="Tools">React</div>
+        </div>
+    </div>
+   
+   
+    <div class="container" id="job-container">
+        <div class="content-left">
+            <img src="./images/account.svg" alt="photosnap">
+            <a href="#" id="photosnap-link">
+                <h3>Account</h3>
+            </a>
+            <div class="box" style="background-color: hsl(180, 29%, 50%);">NEW!</div>
+            <h4>Junior Frontend Developer</h4>
+            <span class="job-info">2d ago</span>
+            <span class="bullet">&bull;</span>
+            <span class="job-info">Part Time</span>
+            <span class="bullet">&bull;</span>
+            <span class="job-info">USA only</span>
+        </div>
+        <div class="delete-cross">✖</div>
+        <div class="job-filters">
+            <div class="clickable-box" data-attribute="role">Frontend</div>
+            <div class="clickable-box" data-attribute="level">Junior</div>
+            <div class="clickable-box" data-attribute="languages">JavaScript</div>
+            <div class="clickable-box" data-attribute="Tools">React</div>
+            <div class="clickable-box" data-attribute="Tools">Sass</div>
+        </div>
+    </div>
+   
+
+    <div class="container" id="job-container">
+        <div class="content-left">
+            <img src="./images/myhome.svg" alt="photosnap">
+            <a href="#" id="photosnap-link">
+                <h3>MyHome</h3>
+            </a>
+            <h4>Junior Frontend Developer</h4>
+            <span class="job-info">5d ago</span>
+            <span class="bullet">&bull;</span>
+            <span class="job-info">Contract</span>
+            <span class="bullet">&bull;</span>
+            <span class="job-info">USA only</span>
+        </div>
+        <div class="delete-cross">✖</div>
+        <div class="job-filters">
+            <div class="clickable-box" data-attribute="role">Frontend</div>
+            <div class="clickable-box" data-attribute="level">Junior</div>
+            <div class="clickable-box" data-attribute="languages">CSS</div>
+            <div class="clickable-box" data-attribute="languages">JavaScript</div>
+            <div class="clickable-box" data-attribute="Tools">React</div>
+            <div class="clickable-box" data-attribute="Tools">Sass</div>
+        </div>
+    </div>
+  
+   
+    <div class="container" id="job-container">
+        <div class="content-left">
+            <img src="./images/loop-studios.svg" alt="photosnap">
+            <a href="#" id="photosnap-link">
+                <h3>Loop Studios</h3>
+            </a>
+            <h4>Software Engineer</h4>
+            <span class="job-info">1w ago</span>
+            <span class="bullet">&bull;</span>
+            <span class="job-info">Full Time</span>
+            <span class="bullet">&bull;</span>
+            <span class="job-info">Worldwide</span>
+        </div>
+        <div class="delete-cross">✖</div>
+        <div class="job-filters">
+            <div class="clickable-box" data-attribute="role">Fullstack</div>
+            <div class="clickable-box" data-attribute="level">Midweight</div>
+            <div class="clickable-box" data-attribute="languages">JavaScript</div>
+            <div class="clickable-box" data-attribute="languages">Ruby</div>
+            <div class="clickable-box" data-attribute="Tools">Sass</div>
+        </div>
+    </div>
+   
+    <div class="container" id="job-container">
+        <div class="content-left">
+            <img src="./images/faceit.svg" alt="photosnap">
+            <a href="#" id="photosnap-link">
+                <h3>FaceIt</h3>
+            </a>
+            <h4>Junior Backend Developer</h4>
+            <span class="job-info">2w ago</span>
+            <span class="bullet">&bull;</span>
+            <span class="job-info">Full Time</span>
+            <span class="bullet">&bull;</span>
+            <span class="job-info">UK only</span>
+        </div>
+        <div class="delete-cross">✖</div>
+        <div class="job-filters">
+            <div class="clickable-box" data-attribute="role">Backend</div>
+            <div class="clickable-box" data-attribute="level">Junior</div>
+            <div class="clickable-box" data-attribute="languages">Ruby</div>
+            <div class="clickable-box" data-attribute="Tools">RoR</div>
+        </div>
+    </div> 
+  
+    <div class="container" id="job-container">
+        <div class="content-left">
+            <img src="./images/shortly.svg" alt="photosnap">
+            <a href="#" id="photosnap-link">
+                <h3>Shortly</h3>
+            </a>
+            <h4>Junior Developer</h4>
+            <span class="job-info">2w ago</span>
+            <span class="bullet">&bull;</span>
+            <span class="job-info">Full Time</span>
+            <span class="bullet">&bull;</span>
+            <span class="job-info">Worldwide</span>
+        </div>
+        <div class="delete-cross">✖</div>
+        <div class="job-filters">
+            <div class="clickable-box" data-attribute="role">Frontend</div>
+            <div class="clickable-box" data-attribute="level">Junior</div>
+            <div class="clickable-box" data-attribute="languages">HTML</div>
+            <div class="clickable-box" data-attribute="languages">JavaScript</div>
+            <div class="clickable-box" data-attribute="Tools">Sass</div>
+        </div>
+    </div>
+   
+    <div class="container" id="job-container">
+        <div class="content-left">
+            <img src="./images/insure.svg" alt="photosnap">
+            <a href="#" id="photosnap-link">
+                <h3>Insure</h3>
+            </a>
+            <h4>Junior Frontend Developer</h4>
+            <span class="job-info">2w ago</span>
+            <span class="bullet">&bull;</span>
+            <span class="job-info">Full Time</span>
+            <span class="bullet">&bull;</span>
+            <span class="job-info">USA only</span>
+        </div>
+        <div class="delete-cross">✖</div>
+        <div class="job-filters">
+            <div class="clickable-box" data-attribute="role">Frontend</div>
+            <div class="clickable-box" data-attribute="level">Junior</div>
+            <div class="clickable-box" data-attribute="languages">JavaScript</div>
+            <div class="clickable-box" data-attribute="Tools">Vue</div>
+            <div class="clickable-box" data-attribute="Tools">Sass</div>
+        </div>
+    </div>
+    
+
+    <div class="container" id="job-container">
+        <div class="content-left">
+            <img src="./images/eyecam-co.svg" alt="photosnap">
+            <a href="#" id="photosnap-link">
+                <h3>Eyecam Co.</h3>
+            </a>
+            <h4>Full Stack Engineer</h4>
+            <span class="job-info">3w ago</span>
+            <span class="bullet">&bull;</span>
+            <span class="job-info">Full Time</span>
+            <span class="bullet">&bull;</span>
+            <span class="job-info">Worldwide</span>
+        </div>
+        <div class="delete-cross">✖</div>
+        <div class="job-filters">
+            <div class="clickable-box" data-attribute="role">Fullstack</div>
+            <div class="clickable-box" data-attribute="level">Midweight</div>
+            <div class="clickable-box" data-attribute="languages">JavaScript</div>
+            <div class="clickable-box" data-attribute="languages">Python</div>
+            <div class="clickable-box" data-attribute="Tools">Django</div>
+        </div>
+    </div>
+    
+
+    <div class="container" id="job-container">
+        <div class="content-left">
+            <img src="./images/the-air-filter-company.svg" alt="photosnap">
+            <a href="#" id="photosnap-link">
+                <h3>The Air Filter Company</h3>
+            </a>
+            <h4>Front-end Dev</h4>
+            <span class="job-info">1mo ago</span>
+            <span class="bullet">&bull;</span>
+            <span class="job-info">Part Time</span>
+            <span class="bullet">&bull;</span>
+            <span class="job-info">Worldwide</span>
+        </div>
+        <div class="delete-cross">✖</div>
+        <div class="job-filters">
+            <div class="clickable-box" data-attribute="role">Frontend</div>
+            <div class="clickable-box" data-attribute="level">Junior</div>
+            <div class="clickable-box" data-attribute="languages">JavaScript</div>
+            <div class="clickable-box" data-attribute="Tools">React</div>
+            <div class="clickable-box" data-attribute="Tools">Sass</div>
+        </div>
+    </div>
+
+    <button class="plus-button" id="openButton">+</button>
+    
+<div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+        <h1>Add Job</h1>
+
+        <div class="form-field">
+            <label for="company"><b>Company</b></label>
+            <input type="text" placeholder="Enter Company" name="company" required>
+        </div>
+<div class="form-field">
+    <label for="logo"><b>Logo:</b></label>
+    <input type="file" name="logo" id="logo" accept="image/*">
+</div>
+        <div class="form-field">
+            <label for="position"><b>Position:</b></label>
+            <input type="text" placeholder="Enter Position" name="position" required>
+        </div>
+
+        <div class="form-field">
+            <label for="role"><b>Role:</b></label>
+            <input type="text" placeholder="Enter Role" name="role" required>
+        </div>
+        
+        <div class="form-field">
+            <label for="level"><b>Level:</b></label>
+            <input type="text" placeholder="Enter Level" name="level" required>
+        </div>
+        
+        <div class="form-field">
+            <label for="postedAt"><b>Posted At:</b></label>
+            <input type="text" placeholder="Enter Posted At" name="postedAt" required>
+        </div>
+
+        <div class="form-field">
+            <label for="contract"><b>Contract:</b></label>
+            <input type="text" placeholder="Enter Contract" name="contract" required>
+        </div>
+
+        <div class="form-field">
+            <label for="new"><b>New</b></label>
+            <input type="checkbox" id="new" name="new">
+        </div>
+
+        <div class="form-field">
+            <label for="featured"><b>Featured</b></label>
+            <input type="checkbox" id="featured" name="featured">
+        </div>
+
+        <div class="form-field">
+            <label for="location"><b>Location:</b></label>
+            <input type="text" placeholder="Enter Location" name="location" required>
+        </div>
+        
+        <div class="form-field">
+            <label for="languages"><b>Languages:</b></label>
+            <input type="text" placeholder="Enter Languages" name="languages" required>
+        </div>
+        
+        <div class="form-field">
+            <label for="tools"><b>Tools:</b></label>
+            <input type="text" placeholder="Enter Tools" name="tools" required>
+        </div>
+
+
+        <button type="submit" class="btn" id="saveJobButton">Save</button>
+        <button type="button" class="btn close" id="closeButton">Close</button>
+    </form>
+</div>
+
+
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Hamayal Sheikh</a>.
+    </div>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>

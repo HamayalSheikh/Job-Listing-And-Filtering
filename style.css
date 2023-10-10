@@ -1,0 +1,357 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.nav-bar {
+    background-color: hsl(180, 29%, 50%);
+    position: relative;
+    width: 1366px;
+    height: 156px;
+    margin-bottom: 50px;
+}
+
+.nav-bar img {
+    width: 1366px;
+    height: 156px;
+    display: block;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(180, 52%, 96%);
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'League Spartan', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: League Spartan ("https://fonts.google.com/specimen/League+Spartan");
+    font-weight: 500, 700;
+    color: hsl(180, 29%, 50%);
+}
+
+h3 {
+    display: inline;
+    margin-right: 10px;
+
+}
+
+h2,
+h4 {
+    color: hsl(180, 14%, 20%);
+    margin-top: 8px;
+}
+
+.job-info {
+    display: inline;
+    color: hsl(180, 8%, 52%);
+}
+
+.bullet {
+    font-size: 1.2em;
+    margin-top: 3px;
+    color: hsl(180, 8%, 52%);
+}
+
+.box {
+    display: inline-block;
+    padding: 7px;
+    border: 1px solid;
+    text-align: center;
+    border-radius: 16px;
+    margin: 5px;
+    color: #fff;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 12px;
+}
+
+.clickable-box {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    background-color: hsl(180, 31%, 95%);
+    color: hsl(180, 29%, 50%);
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.clickable-box:hover {
+    background-color: hsl(180, 29%, 60%);
+    color: white;
+}
+
+.job-filters {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    overflow: hidden;
+    position: relative;
+    width: 950px;
+    margin: 10px 0;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 4px;
+    background-color: transparent;
+    transition: background-color 0.3s;
+}
+
+.container:hover::before {
+    background-color: hsl(180, 29%, 50%);
+}
+
+.content-left {
+    margin-right: 20px;
+}
+
+.container img {
+    float: left;
+    margin-right: 20px;
+    height: 100px;
+    width: 100px;
+}
+
+.delete-cross {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: hsl(180, 14%, 20%);
+}
+
+.delete-cross:hover {
+    color: hsl(180, 29%, 50%);
+}
+
+a#photosnap-link {
+    text-decoration: none;
+    color: hsl(180, 29%, 50%);
+    cursor: pointer;
+}
+
+a#photosnap-link:hover {
+    color: hsl(180, 14%, 20%);
+}
+
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    max-width: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(180, 29%, 50%);
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: hsl(180, 52%, 96%);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.modal-content input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#saveJobButton {
+    background-color: hsl(180, 8%, 52%);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#saveJobButton:hover {
+    background-color:hsl(180, 29%, 50%);
+}
+
+.plus-button {
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    z-index: 1;
+    opacity: 0.8;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: larger;
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid #f1f1f1;
+    z-index: 2;
+    background-color: hsl(180, 52%, 96%);
+    max-width: 800px;
+    height: 600px;
+    padding: 20px;
+    text-align: center;
+    overflow-y: auto;
+}
+
+.form-popup input[type=text],
+.form-popup input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.form-popup .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form-popup .close {
+    background-color: hsl(180, 8%, 52%);
+}
+
+.form-popup .btn:hover,
+.plus-button:hover {
+    opacity: 1;
+}
+
+.form-field {
+    margin-bottom: 10px;
+}
+
+.form-field label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-field input[type="text"],
+.form-field input[type="file"],
+.form-field input[type="checkbox"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+}
+
+
+/* Your existing CSS styles here */
+
+/* Media query for small screens (up to 768px) */
+@media (max-width: 768px) {
+    .nav-bar {
+        /* Modify styles for the navigation bar on smaller screens */
+        width: 100%;
+        /* Make it full-width */
+        height: 100px;
+        /* Adjust the height */
+    }
+
+    .container {
+        /* Modify styles for the job containers on smaller screens */
+        width: 100%;
+        /* Make them full-width */
+        margin: 0;
+        /* Remove margin for full-width */
+    }
+
+    /* Add more styles for smaller screens as needed */
+}
+
+/* Media query for larger screens (769px and above) */
+@media (min-width: 769px) {
+    .nav-bar {
+        /* Reset styles for the navigation bar on larger screens */
+        width: 1366px;
+        /* Restore the original width */
+        height: 156px;
+        /* Restore the original height */
+    }
+
+    .container {
+        /* Reset styles for the job containers on larger screens */
+        width: 950px;
+        /* Restore the original width */
+        margin: 10px 0;
+        /* Restore the original margin */
+    }
+
+    /* Add more styles for larger screens as needed */
+}
